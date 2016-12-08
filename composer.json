@@ -1,5 +1,14 @@
 {
-  "require" : {
+  "name": "ApiHawk/phpresellerclub",
+  "type": "library",
+  "require": {
+    "php": ">=7",
+    "Prime/CoreModule": "^1.0|dev-master",
+    "Prime/AuthModule": "^1.0|dev-master",
+    "Prime/EmailModule": "^1.0|dev-master",
+    "Prime/CustomerModule": "^1.0|dev-master"
+  },
+   "require" : {
     "php" : ">=5.3.3",
     "ext-intl" : "*"
   },
@@ -7,5 +16,26 @@
     "phpunit/phpunit": "4.7.7",
     "phpunit/phpunit-skeleton-generator": "*",
     "codeclimate/php-test-reporter": "dev-master"
+  }
+  "authors": [
+    {
+      "name": "Pavel Nikolov",
+      "email": "p.nikolov@apihawk.com",
+      "homepage": "http://apihawk.com/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Resellerclub\\": "src/"
+    },
+    "classmap": [
+      "src/validation",
+      "src/exception",
+      "src/domain",
+      "src/customer",
+      "src/core",
+      "src/contact",
+      "src/billing"
+    ]
   }
 }
