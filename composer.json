@@ -16,7 +16,7 @@
     "phpunit/phpunit": "4.7.7",
     "phpunit/phpunit-skeleton-generator": "*",
     "codeclimate/php-test-reporter": "dev-master"
-  }
+  },
   "authors": [
     {
       "name": "Pavel Nikolov",
